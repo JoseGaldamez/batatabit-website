@@ -40,6 +40,7 @@
 html{
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -318,7 +319,7 @@ main .main__exchange_tables_container .main__exchange_currency_table .currency_t
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
@@ -327,11 +328,24 @@ main .main__exchange_tables_container .main__exchange_currency_table .currency_t
 }
 
 .clock{
+    background-image: url("./assets/icons/clock.svg");
+}
+.eyes{
+    background-image: url("./assets/icons/eye.svg");
+}
+.check{
+    background-image: url("./assets/icons/check-circle.svg");
+}
+
+.money{
+    background-image: url("./assets/icons/dollar-sign.svg");
+}
+
+.icono{
     display: inline-block;
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url("./assets/icons/clock.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -353,3 +367,152 @@ main .main__exchange_tables_container .main__exchange_currency_table .currency_t
     font-weight: bold;
     line-height: 1.8rem;
 }
+
+.bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("./assets/img/bitcoinbaby2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bitcoin-img-container h2{
+    padding-top: 15vh;
+    font-size: 2.4rem;
+    line-height:2.6rem;
+    font-weight: bold;
+    color: var(--just-white);
+    text-align: center;
+}
+
+.main_plans_container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+.plan_title{
+    width: 90%;
+    min-width: 288px;
+    height:auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plan_title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+
+.plan_title p{
+    padding-top:30px;
+    font-size:1.6rem;
+    font-weight: var(--size-500);
+    line-height: 1.8rem;
+    color: var(--middle-gray );
+}
+
+.plans_container_slider{
+    display: flex;
+    height: 350px;
+    overflow-x: scroll;
+    overscroll-behavior-x: container;
+    scroll-snap-type: x proximity;
+    scrollbar-width: 0px;
+    scrollbar-width: none;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+
+.plans_container_slider .plans_container_card{
+    background-color: var(--just-white);
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    margin: 30px 10px 30px;
+    padding: 10px 15px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    scroll-snap-align: center;
+}
+
+.plans_container_slider .plans_container_card:first-child{
+    margin-left: 20%;
+}
+.plans_container_slider .plans_container_card:last-child{
+    margin-right: 20%;
+}
+
+.plans_container_slider .plans_container_card .plans_recomended{
+    position: absolute;
+    padding: 10px;
+    width: 140px;
+    font-size: 1.4rem;
+    background-color: var(--bitcoin-orage);
+    color: var(--just-white);
+    border-radius: 5px;
+    top: -20px;
+    font-weight: var(--size-700);
+    left: calc(50% - 70px);
+}
+
+.plans_container_slider .plans_container_card h3{
+    font-size:1.8rem;
+    padding-top: 20px;
+}
+
+.plans_container_slider .plans_container_card .plan_info_price{
+    font-size: 6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.plans_container_slider .plans_container_card .plan_info_price span{
+    font-size: 1.4rem;
+    padding-top:15px;
+}
+
+.plans_container_slider .plans_container_card .plan_info_saving{
+    font-size: 1.4rem;
+    color: var(--middle-gray)
+}
+
+
+.plans_container_slider .plans_container_card .plan_info_button{
+    padding: 10px;
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--off-white);
+    border: solid 2px var(--bitcoin-orage);
+    color: var(--black);
+    font-size: 1.4rem;
+    font-weight:bold;
+    line-height: 1.8rem;
+    border-radius: 4px;
+    font-family: "DM Sans";
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+
+.plans_container_slider .plans_container_card .plan_info_button span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    vertical-align:text-bottom;
+}
+
