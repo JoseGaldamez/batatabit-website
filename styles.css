@@ -428,6 +428,13 @@ main .main__exchange_tables_container .main__exchange_currency_table .currency_t
     scrollbar-width: none;
     max-width: 800px;
     margin: 0px auto;
+    scrollbar-width: 0px;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.plans_container_slider::-webkit-scrollbar{
+    display: none;
 }
 
 
