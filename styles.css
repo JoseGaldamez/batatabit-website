@@ -516,3 +516,32 @@ main .main__exchange_tables_container .main__exchange_currency_table .currency_t
     vertical-align:text-bottom;
 }
 
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orage)
+}
+
+footer section{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 50%;
+}
+
+footer section ul{
+    font-size: 1.4rem;
+    font-weight: var(--size-500);
+    line-height:1.8rem;
+    list-style: none;
+}
+footer section ul li{
+    margin: 10px 0px;
+}
+
+footer section ul li a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+

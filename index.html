@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/table.css" media="(min-width: 900px)"> 
 </head>
 <body>
 
@@ -61,10 +62,33 @@
                         </p>
                     </div>
                 </div>
-
-                <div>
-
+                
+                <div class="main__exchange_currency_table">
+                    <p class="currency_table_title">Monedas</p>
+                    <div class="currency_table_container">
+                        <table>
+                            <tr>
+                                <td class="table__top-left">Bitcoin</td><td class="table__top-right table__right">$1.96 <span class="down"></span> </td>
+                            </tr>
+                            <tr>
+                                <td>Etherium</td><td class="table__right">$0.07 <span class="up"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Ripple</td><td class="table__right">$2.17 <span class="down"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="table__bottom-left">Stellar</td><td class="table__bottom-right table__right">$4.96 <span class="down"></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="currency_table_date">
+                        <p>
+                            <b> <strong>Actualizado:</strong> 19 Julio, 23:45 pm</b>
+                        </p>
+                    </div>
                 </div>
+
+
             </section>
 
         </section>
@@ -117,7 +141,7 @@
                 <article class="plans_container_card" >
                     <div class="plan_info_container">
                         <h3>Pago Anual</h3>
-                        <p class="plan_info_price"> <span>$</span> 99 </p>
+                        <p class="plan_info_price"> <span>$</span> 59 </p>
                         <p class="plan_info_saving">* Ahorra $129 comprando el plan mensual.</p>
                         <button class="plan_info_button">Escoge este <span></span> </button>
                     </div>
@@ -136,7 +160,7 @@
                 <article class="plans_container_card" >
                     <div class="plan_info_container">
                         <h3>Pago Anual</h3>
-                        <p class="plan_info_price"> <span>$</span> 99 </p>
+                        <p class="plan_info_price"> <span>$</span> 129 </p>
                         <p class="plan_info_saving">* Ahorra $129 comprando el plan mensual.</p>
                         <button class="plan_info_button">Escoge este <span></span> </button>
                     </div>
@@ -145,7 +169,24 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <section>
+            <ul>
+                <li>
+                    <a href="#">Linkedin</a>
+                </li>
+                <li>
+                    <a href="#">Crunchbase</a>
+                </li>
+                <li>
+                    <a href="#">Hackernews</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <img src="./assets/img/logo-footer.svg" alt="Logo de batatabit 2020">
+        </section>
+    </footer>
     
 </body>
 </html>
